@@ -18,9 +18,9 @@ function App() {
  <div className="container  overflow-x-hidden">
  <Router>
       <Routes>
-        {/* Layout wraps all pages */}
+
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />} /> {/* Default homepage */}
+          <Route path="home" element={<Home />} /> 
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
