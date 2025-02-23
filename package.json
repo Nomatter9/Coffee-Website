@@ -10,7 +10,8 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^4.2.4"
   },
- "homepage": "https://nomatter9.github.io/coffee-website/",
+ "homepage": "https://nomatter9.github.io/coffee-website"
+,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

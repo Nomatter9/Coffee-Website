@@ -20,7 +20,7 @@ export default function Contact() {
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.6053259878263!2d28.022837174396695!3d-26.013743056242273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95714ec723a86f%3A0x6230a74e0eb78223!2sLonehill%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1719262735628!5m2!1sen!2sza"
       className="rounded-lg mr-custom w-full h-full"
         title="Google Maps showing the location of our office"
-      allowfullscreen=""
+      allowfullScreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"> 
       
@@ -30,26 +30,26 @@ export default function Contact() {
                   <div className="w-full max-w-lg p-8 bg-white shadow-md rounded-lg">
                     <form id="contact-form" action="/action_page.php" className="space-y-4">
                       <div>
-                        <label for="fname" className="block text-gray-700 font-semibold mb-1">First Name</label>
+                        <label htmlFor="fname" className="block text-gray-700 font-semibold mb-1">First Name</label>
                         <input type="text" id="fname" name="Firstname" placeholder="Your name.." required
                           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
                       </div>
                       
                       <div>
-                        <label for="lname" className="block text-gray-700 font-semibold mb-1">Last Name</label>
+                        <label htmlFor="lname" className="block text-gray-700 font-semibold mb-1">Last Name</label>
                         <input type="text" id="lname" name="Lastname" placeholder="Your last name.." required
                           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
                       </div>
                       
                       <div>
-                        <label for="email" className="block text-gray-700 font-semibold mb-1">Email</label>
+                        <label htmlFor="email" className="block text-gray-700 font-semibold mb-1">Email</label>
                         <input type="email" id="email" name="email" placeholder="Email.." required
                           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
                       </div>
                       
                       <div>
                         <div className="flex-grow">
-                        <label for="subject" className="block text-gray-700 font-semibold mb-1">Subject</label>
+                        <label htmlFor="subject" className="block text-gray-700 font-semibold mb-1">Subject</label>
                         <textarea id="subject" name="subject" placeholder="Write something..." required
                           className="w-full px-4 py-2 border border-gray-300 rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                       </div>
