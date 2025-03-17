@@ -1,26 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center bg-gray-800 text-white p-4 fixed top-0 left-0 w-full  z-50 md: relative sm:relative">
-      
+    <nav className="bg-gray-800 text-white p-4 fixed top-0 left-0 w-full z-50">
+      <div className="container mx-auto flex justify-between items-center">
         <h1>
-          <a href="#home" className="text-xl font-bold hover:text-gray-300">
+          <Link to="/" className="text-xl font-bold hover:text-gray-300">
             Aroma Coffee Roastery
-          </a>
+          </Link>
         </h1>
 
-        
-        <ul className="flex flex-wrap space-x-6 ">
-          <li><a href="#home" className="hover:text-gray-300">Home</a></li>
-          <li><a href="#about" className="hover:text-gray-300">About</a></li>
-          <li><a href="#services" className="hover:text-gray-300">Services</a></li>
-          <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
+        <ul className="flex flex-wrap space-x-6">
+          <li>
+            <Link to="/" className="hover:text-gray-300">Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-gray-300">About</Link>
+          </li>
+          <li>
+            <Link to="/services" className="hover:text-gray-300">Services</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-gray-300">Contact</Link>
+          </li>
         </ul>
       </div>
     </nav>
   );
 }
-
-

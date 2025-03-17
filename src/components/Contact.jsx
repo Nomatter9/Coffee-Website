@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Contact() {
   return (
 
@@ -26,6 +27,7 @@ export default function Contact() {
       
     </iframe>
                 </div>
+               
                 <div className="w-full lg:w-1/2 flex justify-center h-full">
                   <div className="w-full max-w-lg p-8 bg-white shadow-md rounded-lg">
                     <form id="contact-form" action="/action_page.php" className="space-y-4">
@@ -54,16 +56,19 @@ export default function Contact() {
                           className="w-full px-4 py-2 border border-gray-300 rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                       </div>
                       </div>
+                      <a href="mailto:mnomatter9@gmail.com">
+
                       <div>
                         <input type="submit" value="Submit"
                           className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg cursor-pointer hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"/>
                       </div>
+                      </a>
                     </form>
                   </div>
                 </div>
+               
               </div>
           </div>
-        {/* </div> */}
         </section>
         </section>
  </>

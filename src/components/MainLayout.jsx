@@ -1,24 +1,16 @@
 import React from "react";
-// import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-import About from "./About";
-import Services from "./Services";
-import Contact from "./Contact";
-import Home from "./Home";
+import Footer from "./Footer";
 
-const MainLayout = () => {
+export default function MainLayout() {
   return (
-    <div className="container overflow-x-hidden">
-      <Navbar /> 
-      <Home/>   
-    <About/>
-    <Services/>
-    <Contact/> 
-      <Footer /> 
-      
-    </div>
+    <>
+      <Navbar />
+      <div className="pt-16"> 
+        <Outlet />
+      </div>
+      <Footer />
+    </>
   );
-};
-
-export default MainLayout;
+}
